@@ -1,0 +1,624 @@
+14:36:42 **** Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+Finished building: ../Application.c
+ 
+Building file: ../Buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Buzzer.d" -MT"Buzzer.o" -c -o "Buzzer.o" "../Buzzer.c"
+Finished building: ../Buzzer.c
+ 
+Building file: ../ExtInterrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ExtInterrupts.d" -MT"ExtInterrupts.o" -c -o "ExtInterrupts.o" "../ExtInterrupts.c"
+Finished building: ../ExtInterrupts.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../GPIO.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../GPIO.c
+ 
+Building file: ../Led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Led.d" -MT"Led.o" -c -o "Led.o" "../Led.c"
+Finished building: ../Led.c
+ 
+Building file: ../PushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PushButton.d" -MT"PushButton.o" -c -o "PushButton.o" "../PushButton.c"
+Finished building: ../PushButton.c
+ 
+Building file: ../SevenSegment.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"SevenSegment.d" -MT"SevenSegment.o" -c -o "SevenSegment.o" "../SevenSegment.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../SevenSegment.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../SevenSegment.c
+ 
+Building file: ../Timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timers.d" -MT"Timers.o" -c -o "Timers.o" "../Timers.c"
+In file included from ../DEFS.h:12,
+                 from ../Timers.h:11,
+                 from ../Timers.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timers.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: StopWatch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,StopWatch.map -mmcu=atmega16 -o "StopWatch.elf"  ./Application.o ./Buzzer.o ./ExtInterrupts.o ./GPIO.o ./Led.o ./PushButton.o ./SevenSegment.o ./Timers.o ./main.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [StopWatch.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:38:50 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+../Application.c:8:36: error: ApplicationDefinitions.h: No such file or directory
+../Application.c:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'g_SevenSeg_time'
+../Application.c:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'g_mode'
+../Application.c:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'g_Mult_SevenSegment'
+../Application.c:24: warning: return type defaults to 'int'
+../Application.c: In function 'ISR':
+../Application.c:24: warning: type of 'INT0_vect' defaults to 'int'
+../Application.c:25: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c:25: error: (Each undeclared identifier is reported only once
+../Application.c:25: error: for each function it appears in.)
+../Application.c:28: error: 'g_mode' undeclared (first use in this function)
+../Application.c:28: error: 'INCREMENTAL_MODE' undeclared (first use in this function)
+../Application.c:29: warning: control reaches end of non-void function
+../Application.c: At top level:
+../Application.c:36: warning: return type defaults to 'int'
+../Application.c:35: error: redefinition of 'ISR'
+../Application.c:24: error: previous definition of 'ISR' was here
+../Application.c: In function 'ISR':
+../Application.c:36: warning: type of 'INT1_vect' defaults to 'int'
+../Application.c:37: warning: implicit declaration of function 'Timer1_OFF'
+../Application.c:38: warning: control reaches end of non-void function
+../Application.c: At top level:
+../Application.c:45: warning: return type defaults to 'int'
+../Application.c:44: error: redefinition of 'ISR'
+../Application.c:24: error: previous definition of 'ISR' was here
+../Application.c: In function 'ISR':
+../Application.c:45: warning: type of 'INT2_vect' defaults to 'int'
+../Application.c:46: warning: implicit declaration of function 'Timer1_ON'
+../Application.c:47: warning: control reaches end of non-void function
+../Application.c: At top level:
+../Application.c:54: warning: return type defaults to 'int'
+../Application.c:53: error: redefinition of 'ISR'
+../Application.c:24: error: previous definition of 'ISR' was here
+../Application.c: In function 'ISR':
+../Application.c:54: warning: type of 'TIMER1_COMPA_vect' defaults to 'int'
+../Application.c:55: error: 'g_mode' undeclared (first use in this function)
+../Application.c:55: error: 'INCREMENTAL_MODE' undeclared (first use in this function)
+../Application.c:57: warning: implicit declaration of function 'IncSec'
+../Application.c:61: warning: implicit declaration of function 'DecSec'
+../Application.c:63: warning: control reaches end of non-void function
+../Application.c: In function 'SevenSegmentUpdate':
+../Application.c:70: error: 'uint8' undeclared (first use in this function)
+../Application.c:70: error: 'ptr_to_time' undeclared (first use in this function)
+../Application.c:70: error: expected expression before ')' token
+../Application.c:71: error: 'NUM_SEVEN_SEGMENTS' undeclared (first use in this function)
+../Application.c:74: warning: implicit declaration of function 'SET'
+../Application.c:74: error: 'SEVEN_SEGMENT_MULT_PORT' undeclared (first use in this function)
+../Application.c:78: warning: implicit declaration of function 'WriteSevenSegment'
+../Application.c:78: error: 'g_Mult_SevenSegment' undeclared (first use in this function)
+../Application.c:86: warning: implicit declaration of function '_delay_ms'
+../Application.c:89: warning: implicit declaration of function 'CLEAR_REG'
+../Application.c:89: error: 'SEVEN_SEGMENT_MULT_PIN' undeclared (first use in this function)
+../Application.c: At top level:
+../Application.c:98: error: expected ')' before '*' token
+../Application.c: In function 'IncHour':
+../Application.c:117: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: In function 'DecHour':
+../Application.c:134: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: In function 'IncMin':
+../Application.c:151: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: In function 'DecMin':
+../Application.c:167: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: At top level:
+../Application.c:181: warning: conflicting types for 'IncSec'
+../Application.c:57: warning: previous implicit declaration of 'IncSec' was here
+../Application.c: In function 'IncSec':
+../Application.c:183: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: At top level:
+../Application.c:197: warning: conflicting types for 'DecSec'
+../Application.c:61: warning: previous implicit declaration of 'DecSec' was here
+../Application.c: In function 'DecSec':
+../Application.c:199: error: 'g_SevenSeg_time' undeclared (first use in this function)
+make: *** [Application.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:09 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+../Application.c:8:36: error: ApplicationDefinitions.h: No such file or directory
+../Application.c:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'g_SevenSeg_time'
+../Application.c:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'g_mode'
+../Application.c:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'g_Mult_SevenSegment'
+../Application.c:24: warning: return type defaults to 'int'
+../Application.c: In function 'ISR':
+../Application.c:24: warning: type of 'INT0_vect' defaults to 'int'
+../Application.c:25: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c:25: error: (Each undeclared identifier is reported only once
+../Application.c:25: error: for each function it appears in.)
+../Application.c:28: error: 'g_mode' undeclared (first use in this function)
+../Application.c:28: error: 'INCREMENTAL_MODE' undeclared (first use in this function)
+../Application.c:29: warning: control reaches end of non-void function
+../Application.c: At top level:
+../Application.c:36: warning: return type defaults to 'int'
+../Application.c:35: error: redefinition of 'ISR'
+../Application.c:24: error: previous definition of 'ISR' was here
+../Application.c: In function 'ISR':
+../Application.c:36: warning: type of 'INT1_vect' defaults to 'int'
+../Application.c:37: warning: implicit declaration of function 'Timer1_OFF'
+../Application.c:38: warning: control reaches end of non-void function
+../Application.c: At top level:
+../Application.c:45: warning: return type defaults to 'int'
+../Application.c:44: error: redefinition of 'ISR'
+../Application.c:24: error: previous definition of 'ISR' was here
+../Application.c: In function 'ISR':
+../Application.c:45: warning: type of 'INT2_vect' defaults to 'int'
+../Application.c:46: warning: implicit declaration of function 'Timer1_ON'
+../Application.c:47: warning: control reaches end of non-void function
+../Application.c: At top level:
+../Application.c:54: warning: return type defaults to 'int'
+../Application.c:53: error: redefinition of 'ISR'
+../Application.c:24: error: previous definition of 'ISR' was here
+../Application.c: In function 'ISR':
+../Application.c:54: warning: type of 'TIMER1_COMPA_vect' defaults to 'int'
+../Application.c:55: error: 'g_mode' undeclared (first use in this function)
+../Application.c:55: error: 'INCREMENTAL_MODE' undeclared (first use in this function)
+../Application.c:57: warning: implicit declaration of function 'IncSec'
+../Application.c:61: warning: implicit declaration of function 'DecSec'
+../Application.c:63: warning: control reaches end of non-void function
+../Application.c: In function 'SevenSegmentUpdate':
+../Application.c:70: error: 'uint8' undeclared (first use in this function)
+../Application.c:70: error: 'ptr_to_time' undeclared (first use in this function)
+../Application.c:70: error: expected expression before ')' token
+../Application.c:71: error: 'NUM_SEVEN_SEGMENTS' undeclared (first use in this function)
+../Application.c:74: warning: implicit declaration of function 'SET'
+../Application.c:74: error: 'SEVEN_SEGMENT_MULT_PORT' undeclared (first use in this function)
+../Application.c:78: warning: implicit declaration of function 'WriteSevenSegment'
+../Application.c:78: error: 'g_Mult_SevenSegment' undeclared (first use in this function)
+../Application.c:86: warning: implicit declaration of function '_delay_ms'
+../Application.c:89: warning: implicit declaration of function 'CLEAR_REG'
+../Application.c:89: error: 'SEVEN_SEGMENT_MULT_PIN' undeclared (first use in this function)
+../Application.c: At top level:
+../Application.c:98: error: expected ')' before '*' token
+../Application.c: In function 'IncHour':
+../Application.c:117: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: In function 'DecHour':
+../Application.c:134: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: In function 'IncMin':
+../Application.c:151: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: In function 'DecMin':
+../Application.c:167: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: At top level:
+../Application.c:181: warning: conflicting types for 'IncSec'
+../Application.c:57: warning: previous implicit declaration of 'IncSec' was here
+../Application.c: In function 'IncSec':
+../Application.c:183: error: 'g_SevenSeg_time' undeclared (first use in this function)
+../Application.c: At top level:
+../Application.c:197: warning: conflicting types for 'DecSec'
+../Application.c:61: warning: previous implicit declaration of 'DecSec' was here
+../Application.c: In function 'DecSec':
+../Application.c:199: error: 'g_SevenSeg_time' undeclared (first use in this function)
+make: *** [Application.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:40 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../Application.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application.c
+ 
+Building file: ../Buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Buzzer.d" -MT"Buzzer.o" -c -o "Buzzer.o" "../Buzzer.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../Buzzer.h:11,
+                 from ../Buzzer.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Buzzer.c
+ 
+Building file: ../ExtInterrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ExtInterrupts.d" -MT"ExtInterrupts.o" -c -o "ExtInterrupts.o" "../ExtInterrupts.c"
+In file included from ../DEFS.h:12,
+                 from ../ExtInterrupts.h:12,
+                 from ../ExtInterrupts.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ExtInterrupts.c
+ 
+Building file: ../Led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Led.d" -MT"Led.o" -c -o "Led.o" "../Led.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../Led.h:11,
+                 from ../Led.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Led.c
+ 
+Building file: ../Timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timers.d" -MT"Timers.o" -c -o "Timers.o" "../Timers.c"
+In file included from ../DEFS.h:12,
+                 from ../Timers.h:11,
+                 from ../Timers.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timers.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:6: error: 'PushButton' undeclared (first use in this function)
+../main.c:6: error: (Each undeclared identifier is reported only once
+../main.c:6: error: for each function it appears in.)
+../main.c:6: error: expected ';' before 'ResetButton'
+../main.c:7: warning: implicit declaration of function 'PushButton_Init'
+../main.c:7: error: 'ResetButton' undeclared (first use in this function)
+../main.c:7: error: 'INTERNAL_PULL_UP' undeclared (first use in this function)
+../main.c:10: error: expected ';' before 'PauseButton'
+../main.c:11: error: 'PauseButton' undeclared (first use in this function)
+../main.c:11: error: 'PULL_UP' undeclared (first use in this function)
+../main.c:14: error: expected ';' before 'ResumeButton'
+../main.c:15: error: 'ResumeButton' undeclared (first use in this function)
+../main.c:18: error: expected ';' before 'ModeButton'
+../main.c:19: error: 'ModeButton' undeclared (first use in this function)
+../main.c:22: error: expected ';' before 'HourIncButton'
+../main.c:23: error: 'HourIncButton' undeclared (first use in this function)
+../main.c:26: error: expected ';' before 'HourDecButton'
+../main.c:27: error: 'HourDecButton' undeclared (first use in this function)
+../main.c:30: error: expected ';' before 'MinuteIncButton'
+../main.c:31: error: 'MinuteIncButton' undeclared (first use in this function)
+../main.c:34: error: expected ';' before 'MinuteDecButton'
+../main.c:35: error: 'MinuteDecButton' undeclared (first use in this function)
+../main.c:38: error: expected ';' before 'SecondIncButton'
+../main.c:39: error: 'SecondIncButton' undeclared (first use in this function)
+../main.c:42: error: expected ';' before 'SecondDecButton'
+../main.c:43: error: 'SecondDecButton' undeclared (first use in this function)
+../main.c:77: warning: implicit declaration of function 'ReadButton'
+../main.c:77: error: 'PRESSED' undeclared (first use in this function)
+../main.c: At top level:
+../Application.h:125: warning: inline function 'UpdateCountLEDs' declared but never defined
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:53 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:6: error: 'PushButton' undeclared (first use in this function)
+../main.c:6: error: (Each undeclared identifier is reported only once
+../main.c:6: error: for each function it appears in.)
+../main.c:6: error: expected ';' before 'ResetButton'
+../main.c:7: warning: implicit declaration of function 'PushButton_Init'
+../main.c:7: error: 'ResetButton' undeclared (first use in this function)
+../main.c:7: error: 'INTERNAL_PULL_UP' undeclared (first use in this function)
+../main.c:10: error: expected ';' before 'PauseButton'
+../main.c:11: error: 'PauseButton' undeclared (first use in this function)
+../main.c:11: error: 'PULL_UP' undeclared (first use in this function)
+../main.c:14: error: expected ';' before 'ResumeButton'
+../main.c:15: error: 'ResumeButton' undeclared (first use in this function)
+../main.c:18: error: expected ';' before 'ModeButton'
+../main.c:19: error: 'ModeButton' undeclared (first use in this function)
+../main.c:22: error: expected ';' before 'HourIncButton'
+../main.c:23: error: 'HourIncButton' undeclared (first use in this function)
+../main.c:26: error: expected ';' before 'HourDecButton'
+../main.c:27: error: 'HourDecButton' undeclared (first use in this function)
+../main.c:30: error: expected ';' before 'MinuteIncButton'
+../main.c:31: error: 'MinuteIncButton' undeclared (first use in this function)
+../main.c:34: error: expected ';' before 'MinuteDecButton'
+../main.c:35: error: 'MinuteDecButton' undeclared (first use in this function)
+../main.c:38: error: expected ';' before 'SecondIncButton'
+../main.c:39: error: 'SecondIncButton' undeclared (first use in this function)
+../main.c:42: error: expected ';' before 'SecondDecButton'
+../main.c:43: error: 'SecondDecButton' undeclared (first use in this function)
+../main.c:77: warning: implicit declaration of function 'ReadButton'
+../main.c:77: error: 'PRESSED' undeclared (first use in this function)
+../main.c: At top level:
+../Application.h:125: warning: inline function 'UpdateCountLEDs' declared but never defined
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:40:32 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../Application.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application.c
+ 
+Building file: ../PushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PushButton.d" -MT"PushButton.o" -c -o "PushButton.o" "../PushButton.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../PushButton.h:12,
+                 from ../PushButton.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../PushButton.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.h:125: warning: inline function 'UpdateCountLEDs' declared but never defined
+../Application.h:125: warning: inline function 'UpdateCountLEDs' declared but never defined
+Finished building: ../main.c
+ 
+Building target: StopWatch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,StopWatch.map -mmcu=atmega16 -o "StopWatch.elf"  ./Application.o ./Buzzer.o ./ExtInterrupts.o ./GPIO.o ./Led.o ./PushButton.o ./SevenSegment.o ./Timers.o ./main.o   
+Finished building target: StopWatch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S StopWatch.elf  >"StopWatch.lss"
+Finished building: StopWatch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 StopWatch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11672 bytes (71.2% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:40:39 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 StopWatch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11672 bytes (71.2% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:41:04 **** Clean-only build of configuration Debug for project StopWatch ****
+make clean 
+rm -rf  ./Application.o ./Buzzer.o ./ExtInterrupts.o ./GPIO.o ./Led.o ./PushButton.o ./SevenSegment.o ./Timers.o ./main.o  sizedummy  StopWatch.lss  ./Application.d ./Buzzer.d ./ExtInterrupts.d ./GPIO.d ./Led.d ./PushButton.d ./SevenSegment.d ./Timers.d ./main.d  StopWatch.elf
+ 
+14:41:04 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../Application.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application.c
+ 
+Building file: ../Buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Buzzer.d" -MT"Buzzer.o" -c -o "Buzzer.o" "../Buzzer.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../Buzzer.h:11,
+                 from ../Buzzer.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Buzzer.c
+ 
+Building file: ../ExtInterrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ExtInterrupts.d" -MT"ExtInterrupts.o" -c -o "ExtInterrupts.o" "../ExtInterrupts.c"
+In file included from ../DEFS.h:12,
+                 from ../ExtInterrupts.h:12,
+                 from ../ExtInterrupts.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ExtInterrupts.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../GPIO.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../GPIO.c
+ 
+Building file: ../Led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Led.d" -MT"Led.o" -c -o "Led.o" "../Led.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../Led.h:11,
+                 from ../Led.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Led.c
+ 
+Building file: ../PushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"PushButton.d" -MT"PushButton.o" -c -o "PushButton.o" "../PushButton.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../PushButton.h:12,
+                 from ../PushButton.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../PushButton.c
+ 
+Building file: ../SevenSegment.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"SevenSegment.d" -MT"SevenSegment.o" -c -o "SevenSegment.o" "../SevenSegment.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../SevenSegment.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../SevenSegment.c
+ 
+Building file: ../Timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Timers.d" -MT"Timers.o" -c -o "Timers.o" "../Timers.c"
+In file included from ../DEFS.h:12,
+                 from ../Timers.h:11,
+                 from ../Timers.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timers.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application.h:125: warning: inline function 'UpdateCountLEDs' declared but never defined
+../Application.h:125: warning: inline function 'UpdateCountLEDs' declared but never defined
+Finished building: ../main.c
+ 
+Building target: StopWatch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,StopWatch.map -mmcu=atmega32 -o "StopWatch.elf"  ./Application.o ./Buzzer.o ./ExtInterrupts.o ./GPIO.o ./Led.o ./PushButton.o ./SevenSegment.o ./Timers.o ./main.o   
+Finished building target: StopWatch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S StopWatch.elf  >"StopWatch.lss"
+Finished building: StopWatch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 StopWatch.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11672 bytes (35.6% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:53:01 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Building file: ../Application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application.d" -MT"Application.o" -c -o "Application.o" "../Application.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../Application.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../DEFS.h:12,
+                 from ../GPIO.h:12,
+                 from ../SevenSegment.h:11,
+                 from ../Application.h:14,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: StopWatch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,StopWatch.map -mmcu=atmega32 -o "StopWatch.elf"  ./Application.o ./Buzzer.o ./ExtInterrupts.o ./GPIO.o ./Led.o ./PushButton.o ./SevenSegment.o ./Timers.o ./main.o   
+Finished building target: StopWatch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S StopWatch.elf  >"StopWatch.lss"
+Finished building: StopWatch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 StopWatch.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11672 bytes (35.6% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:53:11 **** Incremental Build of configuration Debug for project StopWatch ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 StopWatch.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11672 bytes (35.6% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
