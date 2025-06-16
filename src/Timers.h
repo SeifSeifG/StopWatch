@@ -7,7 +7,6 @@
  * This file provides initialization functions and control utilities
  * for Timer0, Timer1, and Timer2 in various modes including Normal and CTC.
  */
-
 #include "DEFS.h"
 #include <avr/interrupt.h>
 
