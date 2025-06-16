@@ -13,6 +13,9 @@ Time g_SevenSeg_time = { 3, 59,46 };
 /// Global mode flag: INCREMENTAL_MODE or DECREMENTAL_MODE
 volatile uint8 g_mode = INCREMENTAL_MODE;
 
+/// Global stopwatch mode
+StopWatchMode CurrentMode = RESUME;
+
 /// Array of SevenSegment display instances (HH:MM:SS)
 SevenSegment g_Mult_SevenSegment[NUM_SEVEN_SEGMENTS];
 
@@ -35,6 +38,7 @@ ISR(INT0_vect)
 ISR(INT1_vect)
 {
 	Timer1_OFF();
+	CurrentMode = PAUSED;
 }
 
 /**
@@ -44,6 +48,7 @@ ISR(INT1_vect)
 ISR(INT2_vect)
 {
 	Timer1_ON();
+	CurrentMode = RESUME;
 }
 
 /**

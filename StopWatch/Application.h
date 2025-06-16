@@ -108,6 +108,14 @@ typedef struct
 	uint8 Sec;  /**< Seconds (0–59) */
 } Time;
 
+typedef enum
+{
+	PAUSED,
+	RESUME
+}StopWatchMode;
+
+extern StopWatchMode CurrentMode;
+
 /// Global stopwatch time.
 extern Time g_SevenSeg_time;
 
